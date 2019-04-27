@@ -6,13 +6,13 @@ and considerations from a group of friends who are going out to eat. Based on th
 predicts restaurants and also gives food recommendations. Our idea got selected as top 5 ideas and we went to Google's Cambridge office to demo our product.
 The screenshots of the app are: 
 
-![Alt text](/Gobble-Android-/blob/master/screenshots/Screenshot-1.jpeg?raw=true "Optional Title")
+![Alt text](/screenshots/Screenshot-1.jpeg?raw=true "Optional Title")
 
-![Alt text](/Gobble-Android-/blob/master/screenshots/Screenshot-2.jpeg?raw=true "Optional Title")
+![Alt text](/screenshots/Screenshot-2.jpeg?raw=true "Optional Title")
 
-![Alt text](/Gobble-Android-/blob/master/screenshots/Screenshot-3.jpeg?raw=true "Optional Title")
+![Alt text](/screenshots/Screenshot-3.jpeg?raw=true "Optional Title")
 
-![Alt text](/Gobble-Android-/blob/master/screenshots/Screenshot-4.jpeg?raw=true "Optional Title")
+![Alt text](/screenshots/Screenshot-4.jpeg?raw=true "Optional Title")
 
-![Alt text](/Gobble-Android-/blob/master/screenshots/Screenshot-5.jpeg?raw=true "Optional Title")
+![Alt text](/screenshots/Screenshot-5.jpeg?raw=true "Optional Title")
 

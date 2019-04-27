@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Recommendation"
+    tools:showIn="@layout/activity_recommendation">
+
+    <TextView
+        android:id="@+id/tvRecommendationHeading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gobble Suggestions for your upcoming trip"
+        android:layout_margin="10dp"
+        android:padding="5dp"
+        android:textSize="18sp"
+        android:gravity="center"
+        />
+
+    <LinearLayout
+        android:id="@+id/llRecommendation1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        android:layout_below="@+id/tvRecommendationHeading"
+        android:layout_alignParentRight="true"
+        >
+
+
+
+
+        <TextView
+            android:id="@+id/tvRecommendationCity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:text="New York"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:gravity="right"
+            android:layout_below="@id/tvRecommendationHeading"
+
+            />
+
+        <TextView
+            android:id="@+id/tvRecommendationDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Date Comes Here"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:layout_below="@id/tvRecommendationHeading"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/llRecommendation1"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Common Preferences"
+            android:padding="5dp"
+            android:layout_marginTop="5dp"
+            />
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvRecommendation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

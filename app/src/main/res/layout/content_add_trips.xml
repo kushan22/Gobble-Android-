@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:fillViewport="true"
+    android:layout_height="match_parent">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddTrips"
+
+    tools:showIn="@layout/activity_add_trips">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Where"
+            android:padding="5dp"
+            android:textSize="24sp"
+            android:layout_marginTop="10dp"
+            />
+
+       <EditText
+           android:id="@+id/etTripCity"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="5dp"
+           android:hint="Enter Trip City"
+           />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="When"
+            android:layout_marginTop="20dp"
+            android:textSize="24sp"
+            android:padding="5dp"
+
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            >
+
+            <EditText
+                android:id="@+id/etFromDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="From Date"
+                android:clickable="true"
+                android:inputType="date"
+                android:focusable="false"
+
+                />
+
+
+            <EditText
+                android:id="@+id/etToDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="To Date"
+                android:clickable="true"
+                android:inputType="date"
+                android:focusable="false"
+                />
+
+
+
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Who"
+            android:padding="5dp"
+            android:textSize="24sp"
+
+            />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fbAddFriends"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_add_circle_black_24dp"
+            app:backgroundTint="@android:color/white"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="2dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Preferences"
+            android:padding="5dp"
+            android:textSize="24sp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            >
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvPreference"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fbPreferences"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_add_circle_black_24dp"
+            app:backgroundTint="@android:color/white"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+
+            />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Dislikes"
+            android:padding="5dp"
+            android:textSize="24sp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            >
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvDislike"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fbDislikes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_add_circle_black_24dp"
+                app:backgroundTint="@android:color/white"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Considerations"
+            android:padding="5dp"
+            android:textSize="24sp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            >
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvConsideration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="20dp"
+                />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fbAddConsideration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_add_circle_black_24dp"
+                app:backgroundTint="@android:color/white"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+
+                />
+
+        </LinearLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+
+  <Button
+      android:id="@+id/btCreateTrip"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="Create"
+      android:layout_alignParentBottom="true"
+      android:background="@color/colorPrimary"
+      android:textColor="#fff"
+      />
+
+</RelativeLayout>
+
+</ScrollView>

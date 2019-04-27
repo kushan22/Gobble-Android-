@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.Profile">
+
+    <!-- TODO: Update blank fragment layout -->
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+       <de.hdodenhof.circleimageview.CircleImageView
+           android:id="@+id/cimageProfile"
+           android:layout_width="150dp"
+           android:layout_height="150dp"
+           android:layout_marginTop="20dp"
+           android:layout_centerHorizontal="true"
+
+           />
+
+
+       <LinearLayout
+           android:id="@+id/ll1"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           android:layout_below="@+id/cimageProfile"
+           >
+
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="5dp"
+           android:weightSum="20"
+           >
+
+           <TextView
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:layout_weight="10"
+               android:text="Friends"
+               android:gravity="center"
+               android:textSize="22sp"
+               android:padding="5dp"
+               />
+
+           <TextView
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:layout_weight="10"
+               android:text="Cities Visited"
+               android:gravity="center"
+               android:textSize="22sp"
+               android:padding="5dp"
+               />
+
+
+
+
+       </LinearLayout>
+
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+
+               android:layout_marginTop="5dp"
+               android:weightSum="20"
+               >
+
+               <TextView
+                   android:id="@+id/tvNumberofFriends"
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="10"
+                   android:text="25"
+                   android:gravity="center"
+                   android:textSize="22sp"
+                   android:padding="5dp"
+                   />
+
+               <TextView
+                   android:id="@+id/tvNumberOfCities"
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="10"
+                   android:text="5"
+                   android:gravity="center"
+                   android:textSize="22sp"
+                   android:padding="5dp"
+                   />
+
+
+
+
+           </LinearLayout>
+
+
+
+
+       </LinearLayout>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical"
+           android:layout_below="@+id/ll1"
+           >
+       <TextView
+
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Friend List"
+           android:layout_marginTop="10dp"
+           android:gravity="center"
+           android:textSize="22sp"
+           />
+
+
+       <android.support.v7.widget.RecyclerView
+           android:id="@+id/rvFriendList"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"/>
+
+
+       </LinearLayout>
+
+
+
+
+
+
+
+
+
+       <!--<LinearLayout-->
+           <!--android:layout_width="match_parent"-->
+           <!--android:layout_height="match_parent"-->
+           <!--android:orientation="vertical"-->
+         <!---->
+           <!--&gt;-->
+
+           <!--<TextView-->
+               <!--android:layout_width="match_parent"-->
+               <!--android:layout_height="wrap_content"-->
+               <!--android:text="Friends"-->
+               <!--/>-->
+
+           <!--<android.support.v7.widget.RecyclerView-->
+               <!--android:id="@+id/rvAllFriends"-->
+               <!--android:layout_width="match_parent"-->
+               <!--android:layout_height="match_parent"/>-->
+
+       <!--</LinearLayout>-->
+
+
+   </RelativeLayout>
+
+</FrameLayout>
